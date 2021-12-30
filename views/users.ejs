@@ -1,0 +1,17 @@
+<%- include('header') %>
+    <div class="container w-25 position-absolute top-50 start-50 translate-middle">
+        <h2 class="text-center">Users</h2>
+        <ul class="list-group text-center " style="overflow:scroll;height: 310px;">
+            <% users.forEach(user => { %>
+                <li class="list-group-item ">
+                    <%= user.email %>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+
+
+
+
+
+    <%- include('footer') %>
